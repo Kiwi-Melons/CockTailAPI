@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var viewState: ViewState = .articleList
+    @State var cocktailName: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if viewState == .articleList {
+            CockTailListView(viewState: $viewState, cocktailName: $cocktailName)
         }
-        .padding()
+        else {
+            WebViewContainer(viewState: $viewState, cocktailName: $cocktailName)
+        }
     }
 }
 

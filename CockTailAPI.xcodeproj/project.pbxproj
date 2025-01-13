@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C062B222D349AA700C511E8 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C062B212D349AA700C511E8 /* Contents.json */; };
+		7C062B282D349ACF00C511E8 /* CockTailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C062B232D349ACF00C511E8 /* CockTailListView.swift */; };
+		7C062B292D349ACF00C511E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C062B242D349ACF00C511E8 /* ContentView.swift */; };
+		7C062B2A2D349ACF00C511E8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C062B252D349ACF00C511E8 /* WebView.swift */; };
+		7C062B2B2D349ACF00C511E8 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C062B262D349ACF00C511E8 /* WebViewContainer.swift */; };
+		7C062B302D349AEA00C511E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C062B2C2D349AEA00C511E8 /* Constants.swift */; };
+		7C062B312D349AEA00C511E8 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C062B2D2D349AEA00C511E8 /* FetchData.swift */; };
+		7C062B322D349AEA00C511E8 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C062B2E2D349AEA00C511E8 /* ViewState.swift */; };
 		F0E1CE212D10C0D200463D76 /* CockTailAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1CE202D10C0D200463D76 /* CockTailAPIApp.swift */; };
-		F0E1CE232D10C0D200463D76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1CE222D10C0D200463D76 /* ContentView.swift */; };
 		F0E1CE252D10C0D400463D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E1CE242D10C0D400463D76 /* Assets.xcassets */; };
 		F0E1CE282D10C0D400463D76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E1CE272D10C0D400463D76 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C062B212D349AA700C511E8 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		7C062B232D349ACF00C511E8 /* CockTailListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CockTailListView.swift; sourceTree = "<group>"; };
+		7C062B242D349ACF00C511E8 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C062B252D349ACF00C511E8 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		7C062B262D349ACF00C511E8 /* WebViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		7C062B2C2D349AEA00C511E8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7C062B2D2D349AEA00C511E8 /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		7C062B2E2D349AEA00C511E8 /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		F0E1CE1D2D10C0D200463D76 /* CockTailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CockTailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E1CE202D10C0D200463D76 /* CockTailAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CockTailAPIApp.swift; sourceTree = "<group>"; };
-		F0E1CE222D10C0D200463D76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F0E1CE242D10C0D400463D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0E1CE272D10C0D400463D76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +46,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C062B272D349ACF00C511E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C062B232D349ACF00C511E8 /* CockTailListView.swift */,
+				7C062B242D349ACF00C511E8 /* ContentView.swift */,
+				7C062B252D349ACF00C511E8 /* WebView.swift */,
+				7C062B262D349ACF00C511E8 /* WebViewContainer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C062B2F2D349AEA00C511E8 /* MOdel */ = {
+			isa = PBXGroup;
+			children = (
+				7C062B2C2D349AEA00C511E8 /* Constants.swift */,
+				7C062B2D2D349AEA00C511E8 /* FetchData.swift */,
+				7C062B2E2D349AEA00C511E8 /* ViewState.swift */,
+			);
+			path = MOdel;
+			sourceTree = "<group>";
+		};
 		F0E1CE142D10C0D200463D76 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +86,11 @@
 		F0E1CE1F2D10C0D200463D76 /* CockTailAPI */ = {
 			isa = PBXGroup;
 			children = (
+				7C062B2F2D349AEA00C511E8 /* MOdel */,
+				7C062B272D349ACF00C511E8 /* View */,
 				F0E1CE202D10C0D200463D76 /* CockTailAPIApp.swift */,
-				F0E1CE222D10C0D200463D76 /* ContentView.swift */,
 				F0E1CE242D10C0D400463D76 /* Assets.xcassets */,
+				7C062B212D349AA700C511E8 /* Contents.json */,
 				F0E1CE262D10C0D400463D76 /* Preview Content */,
 			);
 			path = CockTailAPI;
@@ -127,6 +164,7 @@
 			files = (
 				F0E1CE282D10C0D400463D76 /* Preview Assets.xcassets in Resources */,
 				F0E1CE252D10C0D400463D76 /* Assets.xcassets in Resources */,
+				7C062B222D349AA700C511E8 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0E1CE232D10C0D200463D76 /* ContentView.swift in Sources */,
+				7C062B2B2D349ACF00C511E8 /* WebViewContainer.swift in Sources */,
+				7C062B312D349AEA00C511E8 /* FetchData.swift in Sources */,
+				7C062B2A2D349ACF00C511E8 /* WebView.swift in Sources */,
+				7C062B282D349ACF00C511E8 /* CockTailListView.swift in Sources */,
+				7C062B292D349ACF00C511E8 /* ContentView.swift in Sources */,
 				F0E1CE212D10C0D200463D76 /* CockTailAPIApp.swift in Sources */,
+				7C062B322D349AEA00C511E8 /* ViewState.swift in Sources */,
+				7C062B302D349AEA00C511E8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

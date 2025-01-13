@@ -11,7 +11,7 @@ import SwiftUI
 struct WebViewContainer: View {
     
     @Binding var viewState: ViewState
-    @Binding var articleURL: String
+    @Binding var cocktailName: String
     
     var body: some View {
         VStack{
@@ -25,7 +25,7 @@ struct WebViewContainer: View {
                 }
             })
             
-            SwiftUIWebView(urlString: articleURL)
+            SwiftUIWebView(urlString: "https://www.google.com/search?q="+cocktailName + " cocktail")
             
         }
         
@@ -33,5 +33,5 @@ struct WebViewContainer: View {
 }
 
 #Preview {
-    WebViewContainer(viewState: .constant(.articleList), articleURL: .constant("www.google.com"))
+    WebViewContainer(viewState: .constant(.articleList), cocktailName: .constant("www.google.com"))
 }

@@ -8,12 +8,12 @@
 import SwiftUI
 import WebKit
 
-struct SwiftUIWebView : UIViewRepresentable{
+struct SwiftUIWebView : UIViewRepresentable {
     
     let urlString: String
     
     func makeUIView(context: Context) -> WKWebView {
-        var prefs = WKWebpagePreferences()
+        let prefs = WKWebpagePreferences()
         prefs.allowsContentJavaScript = true
         let config = WKWebViewConfiguration()
         config.defaultWebpagePreferences = prefs

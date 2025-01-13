@@ -10,8 +10,9 @@ import SwiftUI
 
 struct CockTailListView: View {
     
-    @Binding var viewState: ViewState
-
+    @Binding var viewState : ViewState
+    @Binding var cocktailName : String
+    
     @State var data: FetchData = FetchData()
     
     var body: some View {
@@ -21,6 +22,7 @@ struct CockTailListView: View {
                 
                 Button {
                     viewState = .webView
+                    cocktailName = drink.strDrink ?? ""
                 } label: {
                     ZStack {
                         VStack{
@@ -45,8 +47,10 @@ struct CockTailListView: View {
                             }.padding()
                             
                             Text(drink.strDrink ?? " ")
+                                .foregroundColor(.nenBlue)
                                 .bold()
                                 .padding(.horizontal)
+                            
                         }
                     } .shadow(radius: 15)
                         .foregroundColor(.black)
@@ -61,5 +65,5 @@ struct CockTailListView: View {
 }
 
 #Preview {
-    CockTailListView(viewState: .constant(.articleList))
+    CockTailListView(viewState: Binding.constant(.articleList), cocktailName: Binding.constant(""))
 }

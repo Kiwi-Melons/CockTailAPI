@@ -42,9 +42,9 @@ struct Response: Codable {
 struct Drink: Codable, Identifiable {
     var strDrink: String?
     var strDrinkThumb: URL?
-    var idDrink: Int
+    var idDrink: String
     
-    var id: Int { idDrink } // Make Drink identifiable for ForEach
+    var id: String {idDrink} // Make Drink identifiable for ForEach
 }
 
 
